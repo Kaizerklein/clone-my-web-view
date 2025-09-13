@@ -23,8 +23,8 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto animate-fade-in">
           {/* Main Headline */}
           <h1 className="text-6xl md:text-8xl font-bold text-foreground mb-8 leading-tight">
-            SPARK MARKETING{" "}
-            <span className="text-gradient">AGENCY</span>
+            ESTIMATE{" "}
+            <span className="text-gradient">MARKETING</span>
           </h1>
           
           {/* Subheading */}
