@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, ChevronDown } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroBackground from "@/assets/hero-background.jpg";
 
 const Hero = () => {
@@ -43,9 +44,12 @@ const Hero = () => {
           <Button 
             size="lg" 
             className="hover-glow group text-lg px-8 py-6 animate-glow-pulse"
+            asChild
           >
-            Schedule a free consultation
-            <ArrowRight className="ml-3 h-5 w-5 group-hover:translate-x-2 transition-transform" />
+            <Link to="/book-a-free-session">
+              Schedule a free consultation
+              <ArrowRight className="ml-3 h-5 w-5 group-hover:translate-x-2 transition-transform" />
+            </Link>
           </Button>
         </div>
       </div>

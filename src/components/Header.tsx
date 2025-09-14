@@ -38,9 +38,11 @@ const Header = () => {
           </nav>
 
           {/* CTA Button */}
-          <Button variant="default" className="hover-glow group">
-            Free consultation
-            <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+          <Button variant="default" className="hover-glow group" asChild>
+            <Link to="/book-a-free-session">
+              Free consultation
+              <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+            </Link>
           </Button>
         </div>
       </div>
