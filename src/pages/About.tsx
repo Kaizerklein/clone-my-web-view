@@ -85,6 +85,93 @@ const About = () => {
                   </a>. We're here to help!
                 </p>
               </section>
+
+              {/* Privacy Policy Section */}
+              <section className="border-t pt-12">
+                <h2 className="text-3xl font-bold text-foreground mb-6">
+                  Privacy Policy
+                </h2>
+                <div className="space-y-6 text-muted-foreground">
+                  <p>
+                    Estimate Marketing is committed to protecting your privacy. This privacy policy explains how we collect, use, and safeguard your information when you use our SMS services.
+                  </p>
+                  
+                  <div>
+                    <h3 className="text-xl font-semibold text-foreground mb-3">Information We Collect:</h3>
+                    <p>We collect information you voluntarily provide when opting into our SMS program, such as your mobile phone number.</p>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-semibold text-foreground mb-3">Use of Information:</h3>
+                    <p>We use your information to deliver marketing messages, updates, and other communications relevant to your interests.</p>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-semibold text-foreground mb-3">Sharing of Information:</h3>
+                    <p>No mobile information will be shared with third parties/affiliates for marketing/promotional purposes. Information sharing to subcontractors in support services, such as customer service, is permitted. All other use case categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties, excluding aggregators and providers of the Text Message services.</p>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-semibold text-foreground mb-3">Data Security:</h3>
+                    <p>We implement security measures designed to protect your information from unauthorized access.</p>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-semibold text-foreground mb-3">Your Choices:</h3>
+                    <p>You may opt out at any time by texting "STOP" to the shortcode. To rejoin, simply opt in again through the signup process.</p>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-semibold text-foreground mb-3">Changes to This Policy:</h3>
+                    <p>We may update this policy from time to time. Changes will be effective upon posting to our site.</p>
+                  </div>
+
+                  <p className="pt-4">
+                    For any questions or privacy-related inquiries, please contact us at{" "}
+                    <a href="mailto:contact@estimatemarketing.com" className="text-primary hover:text-primary/80 transition-colors font-medium">
+                      contact@estimatemarketing.com
+                    </a>
+                  </p>
+                </div>
+              </section>
+
+              {/* Terms of Service Section */}
+              <section className="border-t pt-12">
+                <h2 className="text-3xl font-bold text-foreground mb-6">
+                  Terms of Service
+                </h2>
+                <div className="space-y-6 text-muted-foreground">
+                  <div>
+                    <h3 className="text-xl font-semibold text-foreground mb-3">Estimate Marketing SMS Program</h3>
+                    <p>
+                      Estimate Marketing's SMS program provides updates, promotional offers, reminders, and other marketing communications. By opting in, you can expect messages related to new services, special promotions, important updates, and personalized marketing alerts.
+                    </p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <p>
+                      You can cancel the SMS service at any time. Simply text "STOP" to the shortcode. Upon sending "STOP," we will confirm your unsubscribe status via SMS. Following this confirmation, you will no longer receive SMS messages from us. To rejoin, sign up as you did initially, and we will resume sending SMS messages to you.
+                    </p>
+
+                    <p>
+                      If you experience issues with the messaging program, reply with the keyword HELP for more assistance, or reach out directly to{" "}
+                      <a href="mailto:contact@estimatemarketing.com" className="text-primary hover:text-primary/80 transition-colors font-medium">
+                        contact@estimatemarketing.com
+                      </a>
+                    </p>
+
+                    <p>Carriers are not liable for delayed or undelivered messages.</p>
+
+                    <p>
+                      As always, message and data rates may apply for messages sent to you from us and to us from you. Message frequency may vary. For questions about your text plan or data plan, contact your wireless provider.
+                    </p>
+
+                    <p>
+                      By participating, you acknowledge that you are agreeing to receive recurring marketing messages and confirm that you are the account holder or have the account holder's permission. All services are compliant with industry standards and applicable laws, including the Telephone Consumer Protection Act (TCPA).
+                    </p>
+                  </div>
+                </div>
+              </section>
             </div>
           </div>
         </div>
