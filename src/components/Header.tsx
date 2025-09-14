@@ -32,9 +32,9 @@ const Header = () => {
             <a href="#projects" className="text-muted-foreground hover:text-primary transition-colors font-medium">
               PROJECTS
             </a>
-            <a href="#blog" className="text-muted-foreground hover:text-primary transition-colors font-medium">
-              BLOG
-            </a>
+            <Link to="/book-a-free-session" className="text-muted-foreground hover:text-primary transition-colors font-medium">
+              BOOK A FREE SESSION
+            </Link>
           </nav>
 
           {/* CTA Button */}
