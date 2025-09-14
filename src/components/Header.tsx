@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -19,12 +20,12 @@ const Header = () => {
 
           {/* Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#home" className="text-foreground hover:text-primary transition-colors font-medium">
+            <Link to="/" className="text-foreground hover:text-primary transition-colors font-medium">
               HOME
-            </a>
-            <a href="#about" className="text-muted-foreground hover:text-primary transition-colors font-medium">
+            </Link>
+            <Link to="/about" className="text-muted-foreground hover:text-primary transition-colors font-medium">
               ABOUT
-            </a>
+            </Link>
             <a href="#services" className="text-muted-foreground hover:text-primary transition-colors font-medium">
               SERVICES
             </a>
