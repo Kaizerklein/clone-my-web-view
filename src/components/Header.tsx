@@ -1,7 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 const Header = () => {
+  const location = useLocation();
+  
+  const isActivePage = (path: string) => {
+    return location.pathname === path;
+  };
+
   return <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
@@ -18,15 +24,22 @@ const Header = () => {
 
           {/* Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <Link to="/" className="text-foreground hover:text-primary transition-colors font-medium">
+            <Link 
+              to="/" 
+              className={`${isActivePage('/') ? 'text-foreground' : 'text-muted-foreground'} hover:text-primary transition-colors font-medium`}
+            >
               HOME
             </Link>
-            <Link to="/about" className="text-muted-foreground hover:text-primary transition-colors font-medium">
+            <Link 
+              to="/about" 
+              className={`${isActivePage('/about') ? 'text-foreground' : 'text-muted-foreground'} hover:text-primary transition-colors font-medium`}
+            >
               ABOUT
             </Link>
-            
-            
-            <Link to="/book-a-free-session" className="text-muted-foreground hover:text-primary transition-colors font-medium">
+            <Link 
+              to="/book-a-free-session" 
+              className={`${isActivePage('/book-a-free-session') ? 'text-foreground' : 'text-muted-foreground'} hover:text-primary transition-colors font-medium`}
+            >
               BOOK A FREE SESSION
             </Link>
           </nav>
