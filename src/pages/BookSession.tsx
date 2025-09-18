@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import { useEffect } from "react";
+import Testimonials from "@/components/Testimonials";
 
 const BookSession = () => {
   useEffect(() => {
@@ -74,7 +75,17 @@ const BookSession = () => {
                 <p className="text-muted-foreground">Receive a tailored action plan designed specifically for your business goals.</p>
               </div>
             </div>
+          </div>
+        </div>
 
+        {/* Testimonials */}
+        <Testimonials 
+          title="What Our Clients Say"
+          subtitle="See the results our clients are achieving"
+        />
+
+        <div className="container mx-auto px-6 max-w-6xl">
+          <div className="animate-fade-in">
             {/* Contact Information */}
             <div className="mt-12 text-center bg-gradient-to-r from-primary/10 to-secondary/10 rounded-lg p-8 border">
               <h3 className="text-2xl font-semibold text-foreground mb-4">
