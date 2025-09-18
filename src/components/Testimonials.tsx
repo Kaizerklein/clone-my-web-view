@@ -1,4 +1,5 @@
 import { Card } from "@/components/ui/card";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import testimonial1 from "@/assets/testimonials/testimonial-1.jpg";
 import testimonial2 from "@/assets/testimonials/testimonial-2.jpg";
 import testimonial3 from "@/assets/testimonials/testimonial-3.jpg";
@@ -49,20 +50,32 @@ const Testimonials = ({
         {/* Testimonials Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {testimonials.map((testimonial, index) => (
-            <Card 
-              key={testimonial.id} 
-              className="group overflow-hidden bg-card border-border hover-glow cursor-pointer animate-fade-in"
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
-              <div className="aspect-[3/4] overflow-hidden">
-                <img 
-                  src={testimonial.image} 
-                  alt={testimonial.alt}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  loading="lazy"
-                />
-              </div>
-            </Card>
+            <Dialog key={testimonial.id}>
+              <DialogTrigger asChild>
+                <Card 
+                  className="group overflow-hidden bg-card border-border hover-glow cursor-pointer animate-fade-in"
+                  style={{ animationDelay: `${index * 100}ms` }}
+                >
+                  <div className="aspect-[3/4] overflow-hidden">
+                    <img 
+                      src={testimonial.image} 
+                      alt={testimonial.alt}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      loading="lazy"
+                    />
+                  </div>
+                </Card>
+              </DialogTrigger>
+              <DialogContent className="max-w-4xl w-full max-h-[90vh] p-0 bg-transparent border-none shadow-none">
+                <div className="relative bg-background rounded-lg overflow-hidden">
+                  <img 
+                    src={testimonial.image} 
+                    alt={testimonial.alt}
+                    className="w-full h-auto max-h-[85vh] object-contain"
+                  />
+                </div>
+              </DialogContent>
+            </Dialog>
           ))}
         </div>
 
